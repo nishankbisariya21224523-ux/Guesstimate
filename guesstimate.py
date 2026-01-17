@@ -8,8 +8,7 @@ def play_game():
         
         while i <= 3:
             try:
-                # Note the exact 8 digits after the \U
-                a = int(input("Enter the number \U0001F604 : "))
+                 a = int(input("Enter the number \U0001F604 : "))
             except ValueError:
                 print("Invalid input! Please enter a number.")
                 continue
@@ -18,7 +17,6 @@ def play_game():
                 print("YES, U GUESSED IT CORRECTLY \U0001F44F\U0001F44F!!!")             
                 break
             else:
-                # Logic fix: 3-i shows correct remaining attempts
                 print(f"NO, TRY AGAIN! ONLY {3-i} \U0001F612 ATTEMPTS REMAINING")
                 i += 1
         
@@ -33,6 +31,7 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+
 
 
 
